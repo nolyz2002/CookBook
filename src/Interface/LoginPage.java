@@ -49,6 +49,8 @@ public class LoginPage extends JFrame {
                      }
                      if(count == 1){
                          JOptionPane.showMessageDialog(null, "corrent");
+                         FrontPage frame1 = new FrontPage();
+                         loginFrame.dispose();
                      }else if (count > 1){
                          JOptionPane.showMessageDialog(null, "duplicate");
                      }else {
