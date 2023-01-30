@@ -1,3 +1,4 @@
+import Interface.FrontPage;
 import Interface.LoginPage;
 
 import javax.swing.*;
