@@ -7,6 +7,8 @@ import java.awt.*;
 public class FrontPage {
     private JPanel panel1;
     private JScrollPane scrollPane;
+    private JScrollPane otherUserRecipes;
+    private JButton button1;
 
 
     JEditorPane jep = new JEditorPane();
@@ -23,7 +25,8 @@ public class FrontPage {
             jep.setText("<html>Could not load</html>");
         }
         scrollPane.setViewportView(jep);
-
+        scrollPane.setPreferredSize(new Dimension(250,900));
+        otherUserRecipes.setPreferredSize(new Dimension(250,250));
 
         run();
     }
@@ -37,7 +40,7 @@ public class FrontPage {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //f.getContentPane().add(scrollPane).setSize(100,100);
         f.add(panel1);
-        f.setSize(new Dimension(1000,800));
+        f.setSize(new Dimension(1920,1080));
         f.setVisible(true);
 
     }
