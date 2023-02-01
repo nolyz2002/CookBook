@@ -1,3 +1,5 @@
+package Main;
+
 import Interface.FrontPage;
 import Interface.LoginPage;
 
