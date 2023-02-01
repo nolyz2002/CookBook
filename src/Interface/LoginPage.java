@@ -18,6 +18,8 @@ public class LoginPage extends JFrame {
     public LoginPage(){
         run();
         connection = SqlLiteConnection.dbConnector();
+        loginFrame.getRootPane().setDefaultButton(loginButton);
+
 
 
     }
