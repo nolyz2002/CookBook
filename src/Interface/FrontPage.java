@@ -11,6 +11,7 @@ public class FrontPage  {
     private JScrollPane scrollPane;
     private JScrollPane otherUserRecipes;
     private JButton button1;
+    private JButton button2;
 
 
     JFrame f = new JFrame("Test HTML");
@@ -42,6 +43,13 @@ public class FrontPage  {
 
         run();
 
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ViewRecipes vr = new ViewRecipes();
+                f.dispose();
+            }
+        });
     }
 
 
